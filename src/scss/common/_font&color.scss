@@ -1,0 +1,16 @@
+/* フォントファミリー*/
+$font:"Hiragino Sans", ヒラギノ角ゴシック,"Hiragino Kaku Gothic ProN", "Hiragino Sans", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", Meiryo, sans-serif;
+$font-main:'Nothing You Could Do', cursive;
+$font-mincho: YuMincho,'Yu Mincho', serif;
+
+/*フォントカラー*/
+$color-black:     #000000;
+$color-link:      #735500;
+$color-white:     #ffffff;
+
+/*font-size, font-color, line-height指定*/
+@mixin font-style($font-size, $font-color, $font-weight){
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: $font-weight;
+}
