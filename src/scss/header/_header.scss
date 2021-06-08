@@ -30,6 +30,7 @@
         position: absolute;
         right: 10rem;
         top: 1.5rem;
+        z-index: 99;
         // transform: translateY(-50%);
         // margin-top: -2.5rem;
         @include tab{
@@ -51,19 +52,19 @@
 //-------------------------------
 //  search
 //-------------------------------
-@import 'header/_search.scss';
+@import '_search.scss';
 
 //-------------------------------
 //  user-config
 //-------------------------------
-@import 'header/_user-config.scss';
+@import '_user-config.scss';
 
 //-------------------------------
 //  global-navi
 //-------------------------------
-@import 'header/_global-navi.scss';
+@import '_global-navi.scss';
 
 //-------------------------------
 //  toggle-manu
 //-------------------------------
-@import 'header/_toggle-menu.scss';
+@import '_toggle-menu.scss';

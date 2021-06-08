@@ -1,10 +1,11 @@
 let mySwiper = new Swiper('.main-visual__swiper',{
-    autoplay:{
-        delay:3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false,
-		reverseDirection: false
-    },
+    // autoplay:{
+    //     delay:8000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false,
+	// 	reverseDirection: false
+    // },
+    slidesPerView: 1,
     speed:1000,
     loop:true,
     shortSwipes: false,
@@ -15,21 +16,10 @@ let mySwiper = new Swiper('.main-visual__swiper',{
 	},
     pagination:{
         el:'.swiper-pagination',
-        type:'bullet',
+        type:'bullets',
+        clickable: true
     }
 });
-let mySwiper02 = new Swiper('.text-place-swiper02',{
-    loop:true,
-    slideToClickedSlide: true,
-    controller:{
-        control: mySwiper,
-        inverse: false,
-        by: 'slide'
-    },
-    slidesPerView:1,
-    slideToClickedSlide: true,
-});
-mySwiper.controller.control = mySwiper02;
 
 
 /**

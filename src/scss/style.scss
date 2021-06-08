@@ -28,21 +28,22 @@ body{
     overflow-x: hidden;
     position: relative;
     line-height: 1;
+    font-weight: 700;
 }
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    vertical-align: middle;
+    // vertical-align: middle;
 }
 .wrapper{
     overflow-x: hidden;
 }
 .container{
-    width: 1648px;
+    width: 960px;
     margin: 0 auto;
     @include pc-tab{
-        width: 96.94%;
+        width: 84vw;
     }
     @include tab{
         width: 84vw;
@@ -65,3 +66,257 @@ img{
 //  header
 //-------------------------------
 @import 'header/_header.scss';
+
+//-------------------------------
+//  main-visual
+//-------------------------------
+.main-visual{
+    width: 100%;
+    position: relative;
+}
+
+// Swiperの上書き用CSS
+.swiper-wrapper{
+    width: 100%;
+}
+.swiper-slide{
+    width: 100%;
+    height: 78rem;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @include wide-pc{
+        height: 780px;
+    }
+    @include tab{
+        height: 56rem;
+    }
+    // iframe{
+    //     height: 40rem;
+    // }
+}
+.swiper-button-next{
+    right: 5rem;
+    @include wide-pc{
+        right: 50px;
+    }
+    @include tab{
+        right: 1.6rem;
+    }
+    &:after{
+        content: '\f054';
+        display: block;
+        font-size: 5rem;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $color-white;
+        opacity: 0.4;
+        @include wide-pc{
+            font-size: 50px;
+        }
+        @include tab{
+            font-size: 3.2rem;
+        }
+    }
+}
+.swiper-button-prev{
+    left: 5rem;
+    @include wide-pc{
+        right: 50px;
+    }
+    @include tab{
+        left: 1.6rem;
+    }
+    &:after{
+        content: '\f053';
+        display: block;
+        font-size: 5rem;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $color-white;
+        opacity: 0.4;
+        @include wide-pc{
+            font-size: 50px;
+        }
+        @include tab{
+            font-size: 3.2rem;
+        }
+    }
+}
+.swiper-pagination-bullet{
+    background: $color-black;
+}
+.swiper-pagination-bullet-active{
+    background: $color-white;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 1.1rem;
+    @include wide-pc{
+        margin: 0 11px;
+    }
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 3rem;
+    @include wide-pc{
+        bottom: 30px;
+    }
+    @include tab{
+        bottom: 1.6rem;
+    }
+}
+
+//-------------------------------
+//  student-media
+//-------------------------------
+.student-media, .student-media-mv{
+    display: flex;
+    z-index: 11;
+    align-items: center;
+}
+.student-media-mv{
+    .student-media{
+        &__image{
+            width: 20rem;
+            height: 20rem;
+            margin-right: 3rem;
+            @include wide-pc{
+                width: 200px;
+                height: 200px;
+                margin: 30px;
+            }
+        }
+        &__student-name{
+            display: block;
+            width: 6rem;
+            height: 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            background-color: $color-white;
+            margin-bottom: 0.4rem;
+            @include wide-pc{
+                width: 60px;
+                height: 20px;
+                font-size: 12px;
+                line-height: 20px;
+                margin-bottom: 4px;
+            }
+        }
+        &__title{
+            font-size: 3rem;
+            line-height: 1.2;
+            color: $color-white;
+            margin-bottom: 1.8rem;
+            @include wide-pc{
+                font-size: 30px;
+                margin-bottom: 18px;
+            }
+        }
+        &__tag{
+            color: $color-white;
+            margin-bottom: 1.8rem;
+            @include wide-pc {
+                margin-bottom: 18px;
+            }
+            i{
+                font-size: 1.3rem;
+                @include wide-pc{
+                    font-size: 13px;
+                }
+            }
+        }
+        &__tag-link{
+            font-size: 1.5rem;
+            @include wide-pc{
+                font-size: 15px;
+            }
+        }
+        &__meta{
+            display: flex;
+            align-items: center;
+        }
+        &__meta-info{
+            height: 2rem;
+            background-color: $color-button-bg;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-head-gray;
+            font-size: 1.2rem;
+            @include wide-pc{
+                height: 20px;
+                font-size: 12px;
+            }
+            i{
+                margin-right: 0.5rem;
+                @include wide-pc{
+                    margin-right: 5px;
+                }
+            }
+        }
+        &__link{
+            margin-left: auto;
+        }
+    }
+}
+.movie-amount{
+    width: 6.5rem;
+    @include wide-pc {
+        width: 65px;
+    }
+}
+.period{
+    width: 12rem;
+    @include wide-pc {
+        width: 120px;
+    }
+}
+.link-btn{
+    width: 13.5rem;
+    height: 4rem;
+    background-color: $color-black;
+    color: $color-white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 2rem;
+    @include wide-pc{
+        width: 135px;
+        height: 40px;
+        font-size: 14px;
+        border-radius:40px;
+    }
+    i{
+        font-size: 1.7rem;
+        margin-right: 0.7rem;
+        @include wide-pc{
+            font-size: 17px;
+            margin-right: 7px;
+        }
+    }
+}
+.media-margin-bottom{
+    margin-bottom: 5rem;
+    @include wide-pc{
+        margin-bottom: 50px;
+    }
+}
+.meta-info-margin-right{
+    margin-right: 0.5rem;
+    @include wide-pc{
+        margin-right: 5px;
+    }
+}
