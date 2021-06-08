@@ -15,11 +15,7 @@ let mySwiper = new Swiper('.main-visual__swiper',{
 	},
     pagination:{
         el:'.swiper-pagination',
-        type:'fraction',
-        clickable:false,
-        renderFraction: function(currentClass, totalClass){
-            return '0'+'<span class="'+currentClass+'"></span>'+'<span class="swiper-pagination-border"></span>'+'0'+'<span class="'+totalClass+'"></span>';
-        }
+        type:'bullet',
     }
 });
 let mySwiper02 = new Swiper('.text-place-swiper02',{
@@ -41,13 +37,13 @@ mySwiper.controller.control = mySwiper02;
  * menu-open
  * 
  */
-const humberger = document.querySelector('.header__humberger');
-const menuToggle = document.querySelector('.header__global-navi');
+const humberger = document.querySelector('.humberger');
+const menuToggle = document.querySelector('.global-navi');
 humberger.addEventListener('click', function(){
-    humberger.classList.toggle('js-menu-active');
-    if(humberger.classList.contains('js-menu-active')){
-        menuToggle.classList.add('js-open');
+    humberger.classList.toggle('menu-active');
+    if(humberger.classList.contains('menu-active')){
+        menuToggle.classList.add('menu-open');
     } else {
-        menuToggle.classList.remove('js-open');
+        menuToggle.classList.remove('menu-open');
     }
 });

@@ -19,11 +19,7 @@ var mySwiper = new Swiper('.main-visual__swiper', {
   },
   pagination: {
     el: '.swiper-pagination',
-    type: 'fraction',
-    clickable: false,
-    renderFraction: function renderFraction(currentClass, totalClass) {
-      return '0' + '<span class="' + currentClass + '"></span>' + '<span class="swiper-pagination-border"></span>' + '0' + '<span class="' + totalClass + '"></span>';
-    }
+    type: 'bullet'
   }
 });
 var mySwiper02 = new Swiper('.text-place-swiper02', _defineProperty({
@@ -43,14 +39,14 @@ mySwiper.controller.control = mySwiper02;
  * 
  */
 
-var humberger = document.querySelector('.header__humberger');
-var menuToggle = document.querySelector('.header__global-navi');
+var humberger = document.querySelector('.humberger');
+var menuToggle = document.querySelector('.global-navi');
 humberger.addEventListener('click', function () {
-  humberger.classList.toggle('js-menu-active');
+  humberger.classList.toggle('menu-active');
 
-  if (humberger.classList.contains('js-menu-active')) {
-    menuToggle.classList.add('js-open');
+  if (humberger.classList.contains('menu-active')) {
+    menuToggle.classList.add('menu-open');
   } else {
-    menuToggle.classList.remove('js-open');
+    menuToggle.classList.remove('menu-open');
   }
 });
