@@ -71,42 +71,9 @@ img{
 //-------------------------------
 //  main-visual
 //-------------------------------
-.main-visual{
-    width: 100%;
-    position: relative;
-}
+@import '_mainvisual.scss';
+
 // Swiperの上書き用CSS
-.main-visual__swiper-wrapper{
-    width: 100%;
-}
-.main-visual__swiper-slide{
-    width: 100%;
-    height: 78rem;
-    display: flex;
-    align-items: flex-end;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    &:before{
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        opacity: 0.7;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    @include wide-pc{
-        height: 780px;
-    }
-    @include tab{
-        height: 56rem;
-    }
-    // iframe{
-    //     height: 40rem;
-    // }
-}
 .swiper-button-next{
     outline: none;
     &.next01{
@@ -274,7 +241,7 @@ img{
 @import '_news.scss';
 
 //-------------------------------
-//  student
+//  student's-contents
 //-------------------------------
 .student{
     padding: 4.8rem  0 8.5rem 0;
@@ -302,6 +269,7 @@ img{
         border-radius: 1rem;
         cursor: pointer;
         @include wide-pc{
+            width: 105px;
             padding: 0 10px;
             height: 20px;
             font-size: 12px;
@@ -381,19 +349,12 @@ img{
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         margin-bottom: 0.6rem;
-    }
-    &__tag{
-        color: $color-white;
-        i{
-            font-size: 1.2rem;
-            margin-right: 0.2rem;
+        @include wide-pc{
+            font-size: 15px;
+            margin-bottom: 6px;
         }
     }
-    &__tag-link{
-        @include font-style(1.2rem, $color-white, 700);
-    }
 }
-
 .ly-sort-top{
     margin-bottom: 1rem;
 }
@@ -403,44 +364,14 @@ img{
 //-------------------------------
 //  meta
 //-------------------------------
-.meta{
-    display: flex;
-    align-items: center;
-}
-.meta-info{
-    background-color: $color-button-bg;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color-head-gray;
-    padding: 0 0.8em;
-    height: 2rem;
-    font-size: 1.2rem;
-    line-height: 1;
-    &.watched{
-        color: $color-watched;
-    }
-    @include wide-pc{
-        height: 20px;
-        font-size: 12px;
-    }
-    i{
-        margin-right: 0.5rem;
-        @include wide-pc{
-            margin-right: 5px;
-        }
-    }
-}
+@import '_meta.scss';
+
 //-------------------------------
-//  category
+//  tag
 //-------------------------------
+@import '_tag.scss';
+
 //-------------------------------
 //  footer
 //-------------------------------
-.footer{
-    width: 100%;
-    background-color: $color-black;
-    &__menu{
-        
-    }
-}
+@import '_footer.scss';

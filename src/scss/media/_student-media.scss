@@ -62,31 +62,6 @@
             max-width: 100%;
         }
     }
-    &__tag{
-        color: $color-white;
-        margin-bottom: 1.8rem;
-        @include wide-pc {
-            margin-bottom: 18px;
-        }
-        @include tab{
-            margin-bottom: 1.2rem;
-        }
-        i{
-            font-size: 1.3rem;
-            @include wide-pc{
-                font-size: 13px;
-            }
-        }
-    }
-    &__tag-link{
-        font-size: 1.5rem;
-        @include wide-pc{
-            font-size: 15px;
-        }
-        @include tab{
-            font-size: 1.2rem;
-        }
-    }
     &__link{
         margin-left: auto;
         @include tab{

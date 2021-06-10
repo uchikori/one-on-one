@@ -1578,22 +1578,6 @@ img {
   margin-bottom: 1.4rem;
 }
 
-.student-media__tag {
-  color: #eeeeee;
-  margin-bottom: 28.8px;
-  margin-bottom: 1.8rem;
-}
-
-.student-media__tag i {
-  font-size: 20.8px;
-  font-size: 1.3rem;
-}
-
-.student-media__tag-link {
-  font-size: 24px;
-  font-size: 1.5rem;
-}
-
 .student-media__link {
   margin-left: auto;
 }
@@ -1892,24 +1876,6 @@ img {
   margin-bottom: 0.6rem;
 }
 
-.movie-contents__tag {
-  color: #eeeeee;
-}
-
-.movie-contents__tag i {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  margin-right: 3.2px;
-  margin-right: 0.2rem;
-}
-
-.movie-contents__tag-link {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  color: #eeeeee;
-  font-weight: 700;
-}
-
 .ly-sort-top {
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -1958,9 +1924,87 @@ img {
   margin-right: 0.5rem;
 }
 
+.tag {
+  color: #eeeeee;
+}
+
+.student-media .tag {
+  margin-bottom: 28.8px;
+  margin-bottom: 1.8rem;
+}
+
+.tag i {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-right: 3.2px;
+  margin-right: 0.2rem;
+}
+
+.student-media .tag__link {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.movie-contents .tag__link {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  color: #eeeeee;
+  font-weight: 700;
+}
+
 .footer {
   width: 100%;
   background-color: #0F0F0F;
+  padding: 105.6px 0 32px 0;
+  padding: 6.6rem 0 2rem 0;
+}
+
+.footer__menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__menu-left {
+  margin-right: 80px;
+  margin-right: 5rem;
+}
+
+.footer__menu-item {
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  color: #666666;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.footer__copyright small {
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  color: #333333;
+  font-weight: 700;
+}
+
+.ly-margin-copy {
+  margin-top: 54.4px;
+  margin-top: 3.4rem;
 }
 
 @media (max-width: 768px) {
@@ -2040,12 +2084,6 @@ img {
     margin-bottom: 1.2rem;
     max-width: 100%;
   }
-  .student-media__tag {
-    margin-bottom: 1.2rem;
-  }
-  .student-media__tag-link {
-    font-size: 1.2rem;
-  }
   .student-media__link {
     margin-left: 0;
     margin-top: 1.6rem;
@@ -2093,6 +2131,12 @@ img {
   .movie-contents__thumbnail {
     height: auto;
   }
+  .student-media .tag {
+    margin-bottom: 1.2rem;
+  }
+  .student-media .tag__link {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2101,6 +2145,17 @@ img {
   }
   .movie-contents__item {
     width: 100%;
+  }
+  .footer__menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__menu-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2232,15 +2287,6 @@ img {
     margin-bottom: 14px;
     max-width: 560px;
   }
-  .student-media__tag {
-    margin-bottom: 18px;
-  }
-  .student-media__tag i {
-    font-size: 13px;
-  }
-  .student-media__tag-link {
-    font-size: 15px;
-  }
   .student-media-mv .student-media__image {
     width: 200px;
     height: 200px;
@@ -2290,6 +2336,7 @@ img {
     margin-left: 12px;
   }
   .movie-contents__sort {
+    width: 105px;
     padding: 0 10px;
     height: 20px;
     font-size: 12px;
@@ -2312,12 +2359,44 @@ img {
   .movie-contents__post-time {
     margin-right: 5px;
   }
+  .movie-contents__title {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
   .meta-info {
     height: 20px;
     font-size: 12px;
   }
   .meta-info i {
     margin-right: 5px;
+  }
+  .student-media .tag {
+    margin-bottom: 18px;
+  }
+  .tag i {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .student-media .tag__link {
+    font-size: 15px;
+  }
+  .movie-contents .tag__link {
+    font-size: 12px;
+  }
+  .footer {
+    padding: 66px 0 20px 0;
+  }
+  .footer__menu-left {
+    margin-right: 50px;
+  }
+  .footer__menu-item {
+    font-size: 14px;
+  }
+  .footer__copyright small {
+    font-size: 13px;
+  }
+  .ly-margin-copy {
+    margin-top: 34px;
   }
 }
 
