@@ -68,6 +68,11 @@
         background-color: $color-button-bg; 
         margin-left: auto;
         @include font-style(1.3rem, $color-white, 700);
+        transition: filter 0.3s ease;
+        &:hover{
+            filter: brightness(150%);
+            transition: filter 0.3s ease;
+        }
         @include wide-pc{
             width: 118px;
             font-size: 13px;

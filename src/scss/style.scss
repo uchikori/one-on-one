@@ -125,6 +125,7 @@ img{
             font-weight: 900;
             color: $color-white;
             opacity: 0.4;
+            transition: opacity 0.3s ease;
             @include wide-pc{
                 font-size: 50px;
             }
@@ -132,9 +133,16 @@ img{
                 font-size: 3.2rem;
             }
         }
+        &:hover{
+            &:after{
+                transition: opacity 0.3s ease;
+                opacity: 1;
+            }
+        }
     }
     &.next-common{
         right: -6.4rem;
+        transition: filter 0.3s ease;
         @include wide-pc{
             right: -64px;
         }
@@ -149,6 +157,7 @@ img{
             font-weight: 900;
             color: $color-white;
             opacity: 0.4;
+            transition: opacity 0.3s ease;
             @include wide-pc{
                 font-size: 30px;
             }
@@ -156,7 +165,14 @@ img{
                 font-size: 2.4rem;
             }
         }
+        &:hover{
+            &:after{
+                transition: opacity 0.3s ease;
+                opacity: 1;
+            }
+        }
     }
+
 
 
 }
@@ -178,11 +194,18 @@ img{
             font-weight: 900;
             color: $color-white;
             opacity: 0.4;
+            transition: opacity 0.3s ease;
             @include wide-pc{
                 font-size: 50px;
             }
             @include tab{
                 font-size: 3.2rem;
+            }
+        }
+        &:hover{
+            &:after{
+                transition: opacity 0.3s ease;
+                opacity: 1;
             }
         }
     }
@@ -202,11 +225,18 @@ img{
             font-weight: 900;
             color: $color-white;
             opacity: 0.4;
+            transition: opacity 0.3s ease;
             @include wide-pc{
                 font-size: 30px;
             }
             @include tab{
                 font-size: 2.4rem;
+            }
+        }
+        &:hover{
+            &:after{
+                transition: opacity 0.3s ease;
+                opacity: 1;
             }
         }
     }
@@ -296,6 +326,13 @@ img{
     }
     &__item{
         width: 22rem;
+        &:hover{
+            .movie-contents__thumbnail{
+                transform: scale(1.1);
+                filter: brightness(120%);
+                transition: filter 0.3s ease, transform 0.3s ease;
+            }
+        }
         @include wide-pc{
             width: 220px;
         }
@@ -311,6 +348,11 @@ img{
         height: 12.4rem;
         margin-bottom: 0.9rem;
         display: block;
+        overflow: hidden;
+        object-fit: cover;
+        transform: scale(1.0);
+        position: relative;
+        transition: filter 0.3s ease, transform 0.3s ease;
         @include wide-pc{
             height: 124px;
             margin-bottom: 9px;
@@ -392,3 +434,13 @@ img{
 //-------------------------------
 //  category
 //-------------------------------
+//-------------------------------
+//  footer
+//-------------------------------
+.footer{
+    width: 100%;
+    background-color: $color-black;
+    &__menu{
+        
+    }
+}

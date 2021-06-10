@@ -16,3 +16,16 @@ git checkout mainVisual
 git add -A
 git commit -m[]
 git push origin mainVisual
+git add -A
+git commit -m['メインビジュアル部分まで完成しました']
+git push origin mainVisual
+git branch mainContents
+git status
+git branch
+git checkout mainContents
+git add -A
+git commit -m[]
+git push origin mainContents
+git add -A
+git commit -m[]
+git push origin mainContents

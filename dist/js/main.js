@@ -48,6 +48,19 @@ var mySwiper03 = new Swiper('.student__swiper02', {
     prevEl: '.prev03'
   }
 });
+var mySwiper04 = new Swiper('.student__swiper03', {
+  spaceBetween: 26,
+  initialSlide: 1,
+  slidesPerView: 'auto',
+  speed: 1000,
+  loop: true,
+  // shortSwipes: false,
+  // longSwipes: false,
+  navigation: {
+    nextEl: '.next04',
+    prevEl: '.prev04'
+  }
+});
 /**
  * 
  * menu-open

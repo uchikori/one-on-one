@@ -46,6 +46,7 @@
         }
     }
     &__title{
+        max-width: 56rem;
         color: $color-white;
         font-size: 2.2rem;
         line-height: 1.6;
@@ -53,10 +54,12 @@
         @include wide-pc{
             font-size: 22px;
             margin-bottom: 14px;
+            max-width: 560px;
         }
         @include tab{
             font-size: 2rem;
             margin-bottom: 1.2rem;
+            max-width: 100%;
         }
     }
     &__tag{
@@ -137,6 +140,11 @@
     align-items: center;
     justify-content:center;
     border-radius: 2rem;
+    transition: filter 0.3s ease;
+    &:hover{
+        filter: brightness(150%);
+        transition: filter 0.3s ease;
+    }
     @include wide-pc{
         padding: 0 20px;
         height: 40px;
