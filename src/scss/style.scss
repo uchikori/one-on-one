@@ -244,12 +244,36 @@ img{
 //  student's-contents
 //-------------------------------
 .student{
-    padding: 7rem 0;
+    padding: 7rem 0 6.4rem 0;
+    @include wide-pc{
+        padding: 70px 0 64px 0;
+    }
     &__media{
         margin-bottom: 4rem;
     }
+    &__description{
+        max-width: 73rem;
+        margin-left: auto;
+        margin-top: 4px;
+        @include wide-pc{
+            max-width: 730px;
+        }
+        @include tab{
+            padding: 1rem 0;
+        }
+    }
     &.bg-gray{
         background-color: $color-bg2;   
+    }
+}
+.description{
+    @include font-style(1.5rem, $color-white, 500);
+    line-height: 1.8;
+    @include wide-pc{
+        font-size: 15px;
+    }
+    @include tab{
+        font-size: 1.2rem;
     }
 }
 .movie-contents{

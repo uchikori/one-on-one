@@ -20,6 +20,7 @@
   </script>
   <!-- jQuery読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="src/js/infinite-scroll.pkgd.min.js"></script>
 </head>
 <body class="tax-student">
   <div class="wrapper">
@@ -142,7 +143,7 @@
     <div class="main-visual">
       <div class="main-visual__swiper">
         <div class="main-visual__wrapper">
-          <div class="main-visual__image main-visual__image_other" style="background-image: url('dist/images/main-slide01.jpg');">
+          <div class="main-visual__image_other" style="background-image: url('dist/images/main-slide01.jpg');">
             <h2 class="main-visual__title">生徒一覧</h2>
           </div>
         </div>
@@ -154,8 +155,8 @@
     <main class="main-contents">
       <section class="student">
         <div class="student__inner container">
-          <div class="student-media student__media">
-            <div class="student-media__image">
+          <div class="student-media">
+            <div class="student-media__image_large">
               <img src="dist/images/account_mizuno.png" alt="account_mizuno">
             </div>
             <div class="student-media__body">
@@ -172,122 +173,17 @@
                 <div class="student-media__meta-info meta-info period">2018年8月〜2018年9月</div>
               </div>
             </div>
-            <a class="link-btn student-media__link" href="/"><i class="fas fa-info-circle"></i>詳しく見る</a>
+            <a class="link-btn student-media__link" href="/term-yuri.html"><i class="fas fa-info-circle"></i>詳しく見る</a>
           </div>
-          <div class="movie-contents">
-            <div class="student__swiper01 swiper-container">
-              <div class="movie-contents__sort js-sort ly-sort-top">
-                並替：
-                <i class="fas fa-caret-up js-sort-icon"></i>
-              </div>
-              <div class="movie-contents__items swiper-wrapper">
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_mizuno01.jpg" alt="thumbnail_mizuno01">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年10月28日
-                    </time>
-                    <div class="movie-contents__watched meta-info watched">
-                      視聴済
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#00</span>
-                    インタビュー［佐賀]
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">インタビュー</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_mizuno02.jpg" alt="thumbnail_mizuno02">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2018年8月7日
-                    </time>
-                    <div class="movie-contents__watched meta-info watched">
-                      視聴済
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#01</span>
-                    自己紹介
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">バナーデザイン</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_mizuno03.jpg" alt="thumbnail_mizuno03">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2018年8月7日
-                    </time>
-                    <div class="movie-contents__watched meta-info watched">
-                      視聴済
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#02</span>
-                    課題を出す
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">バナーデザイン</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_mizuno04.jpg" alt="thumbnail_mizuno04">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2018年8月11日
-                    </time>
-                    <div class="movie-contents__watched meta-info">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#03</span>
-                    ヒカルがデザインする
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">バナーデザイン</a>
-                  </div>
-  
-  
-  
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev prev02 prev-common"></div>
-            <div class="swiper-button-next next02 next-common"></div>
-          </div>
+          <p class="description student__description">
+            大学生のMizunoくんへ、バナーデザインを教材にデザインの基礎をレクチャーします。デザインの四大原則である［近接・整列・強弱・反復］や、配色の［色相・明度・彩度］などデザインの基本を丁寧に解説しています。Photoshopの基本操作や、切り抜き、写真の補正など、オペレーションについても学習します。
+          </p>
         </div>
       </section>
       <section class="student bg-gray">
         <div class="student__inner container">
-          <div class="student-media student__media">
-            <div class="student-media__image">
+          <div class="student-media">
+            <div class="student-media__image_large">
               <img src="dist/images/account_yuri.png" alt="account_yuri">
             </div>
             <div class="student-media__body">
@@ -308,122 +204,17 @@
                 <div class="student-media__meta-info meta-info period">2019年8月〜現在</div>
               </div>
             </div>
-            <a class="link-btn student-media__link" href="/"><i class="fas fa-info-circle"></i>詳しく見る</a>
+            <a class="link-btn student-media__link" href="/term-yuri.html"><i class="fas fa-info-circle"></i>詳しく見る</a>
           </div>
-          <div class="movie-contents">
-            <div class="student__swiper02 swiper-container">
-              <div class="movie-contents__sort js-sort ly-sort-top">
-                並替：
-                <i class="fas fa-caret-up js-sort-icon"></i>
-              </div>
-              <div class="movie-contents__items swiper-wrapper">
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_yuri01.jpg" alt="thumbnail_yuri01">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年11月16日
-                    </time>
-                    <div class="movie-contents__watched meta-info watched">
-                      視聴済
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#00</span>
-                    インタビュー［大阪]
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">インタビュー</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_yuri02.jpg" alt="thumbnail_yuri02">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年8月2日
-                    </time>
-                    <div class="movie-contents__watched meta-info">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#01</span>
-                    デザインカンプへの道
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">デザインカンプ</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_yuri03.jpg" alt="thumbnail_yuri03">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年8月11日
-                    </time>
-                    <div class="movie-contents__watched meta-info watched">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#02</span>
-                    デザインカンプへの道
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">デザインカンプ</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_yuri04.jpg" alt="thumbnail_yuri04">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年8月18日
-                    </time>
-                    <div class="movie-contents__watched meta-info">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#03</span>
-                    デザインカンプへの道
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">デザインカンプ</a>
-                  </div>
-  
-  
-  
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev prev03 prev-common"></div>
-            <div class="swiper-button-next next03 next-common"></div>
-          </div>
+          <p class="description student__description">
+            Webデザイナーを目指すyuriさんと一緒に、ポートフォリオサイト制作を教材にWebサイト制作全般をレクチャーします。ワイヤーフレームからデザインカンプの作り方、HTML・CSSコーディングからWordPressの組込まで、現場で行う制作工程と同じ流れでサイト制作を学習します。
+          </p>
         </div>
       </section>
       <section class="student">
         <div class="student__inner container">
-          <div class="student-media student__media">
-            <div class="student-media__image">
+          <div class="student-media">
+            <div class="student-media__image_large">
               <img src="dist/images/account_hirada.png" alt="account_hirada">
             </div>
             <div class="student-media__body">
@@ -444,116 +235,11 @@
                 <div class="student-media__meta-info meta-info period">2019年8月〜現在</div>
               </div>
             </div>
-            <a class="link-btn student-media__link" href="/"><i class="fas fa-info-circle"></i>詳しく見る</a>
+            <a class="link-btn student-media__link" href="/term-yuri.html"><i class="fas fa-info-circle"></i>詳しく見る</a>
           </div>
-          <div class="movie-contents">
-            <div class="student__swiper03 swiper-container">
-              <div class="movie-contents__sort js-sort ly-sort-top">
-                並替：
-                <i class="fas fa-caret-up js-sort-icon"></i>
-              </div>
-              <div class="movie-contents__items swiper-wrapper">
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_hirada01.jpg" alt="thumbnail_hirada01">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年12月14日
-                    </time>
-                    <div class="movie-contents__watched meta-info">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#00</span>
-                    インタビュー［福岡]
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">インタビュー</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_hirada02.jpg" alt="thumbnail_hirada02">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年8月31日
-                    </time>
-                    <div class="movie-contents__watched meta-info">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#01</span>
-                    コンテンツとワイヤーフレーム
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">ワイヤーフレーム</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_hirada03.jpg" alt="thumbnail_hirada03">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年9月7日
-                    </time>
-                    <div class="movie-contents__watched meta-info">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#02</span>
-                    ワイヤーフレーム
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">ワイヤーフレーム</a>
-                  </div>
-  
-  
-  
-                </div>
-                <div class="movie-contents__item swiper-slide">
-                  <a class="movie-contents__thumbnail" href="/">
-                    <img src="dist/images/thumbnail_hirada04.jpg" alt="thumbnail_hirada04">
-                  </a>
-                  <div class="movie-contents__meta meta">
-                    <time class="movie-contents__post-time meta-info ">
-                      2019年8月29日
-                    </time>
-                    <div class="movie-contents__watched meta-info">
-                      未視聴
-                    </div>
-                  </div>
-                  <h3 class="movie-contents__title">
-                    <span>#03</span>
-                    デザイン1
-                  </h3>   
-                  <div class="movie-contents__tag tag">
-                    <i class="fas fa-tags"></i>
-                    <a href="/" class="movie-contents__tag-link tag__link">デザインカンプ</a>
-                  </div>
-  
-  
-  
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev prev04 prev-common"></div>
-            <div class="swiper-button-next next04 next-common"></div>
-          </div>
+          <p class="description student__description">
+            元WebデザイナーのHiradaさんへ、現在行われているモダンなWebサイト制作をレクチャーします。HTML5で追加された要素やCSS3の解説など、過去の制作を振り返りながら［今の制作］を伝えます。自身のメディアサイト公開を目標に、WordPressの組込まで学習します。
+          </p>
         </div>
       </section>
     </main>

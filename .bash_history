@@ -39,3 +39,14 @@ git checkout footer
 git add -A
 git commit -m[]
 git push origin footer
+git add -A
+git commit -m[]
+git push origin footer
+git branch student
+git checkout student
+git add -A
+git commit -m[]
+git push origin student
+git add -A
+git commit -m[]
+git push origin student
