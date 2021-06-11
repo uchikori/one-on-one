@@ -1,64 +1,67 @@
-let mySwiper = new Swiper('.main-visual__swiper',{
-    // autoplay:{
-    //     delay:8000,
-    //     stopOnLastSlide: false,
-    //     disableOnInteraction: false,
-	// 	reverseDirection: false
-    // },
-    slidesPerView: 1,
-    speed:1000,
-    loop:true,
-    shortSwipes: false,
-    longSwipes: false,
-    navigation: {
-		nextEl: '.next01',
-		prevEl: '.prev01'
-	},
-    pagination:{
-        el:'.swiper-pagination',
-        type:'bullets',
-        clickable: true
-    }
-});
-let mySwiper02 = new Swiper('.student__swiper01',{
-    spaceBetween: 26,
-    initialSlide: 1,
-    slidesPerView: 'auto',
-    speed:500,
-    loop:true,
-    // shortSwipes: false,
-    // longSwipes: false,
-    navigation: {
-		nextEl: '.next02',
-		prevEl: '.prev02'
-	},
-})
-let mySwiper03 = new Swiper('.student__swiper02',{
-    spaceBetween: 26,
-    initialSlide: 1,
-    slidesPerView: 'auto',
-    speed:500,
-    loop:true,
-    // shortSwipes: false,
-    // longSwipes: false,
-    navigation: {
-		nextEl: '.next03',
-		prevEl: '.prev03'
-	},
-})
-let mySwiper04 = new Swiper('.student__swiper03',{
-    spaceBetween: 26,
-    initialSlide: 1,
-    slidesPerView: 'auto',
-    speed:500,
-    loop:true,
-    // shortSwipes: false,
-    // longSwipes: false,
-    navigation: {
-		nextEl: '.next04',
-		prevEl: '.prev04'
-	},
-})
+if(location.pathname === '/'){
+    let mySwiper = new Swiper('.main-visual__swiper',{
+        // autoplay:{
+        //     delay:8000,
+        //     stopOnLastSlide: false,
+        //     disableOnInteraction: false,
+        // 	reverseDirection: false
+        // },
+        slidesPerView: 1,
+        speed:1000,
+        loop:true,
+        shortSwipes: false,
+        longSwipes: false,
+        navigation: {
+            nextEl: '.next01',
+            prevEl: '.prev01'
+        },
+        pagination:{
+            el:'.swiper-pagination',
+            type:'bullets',
+            clickable: true
+        }
+    });
+    let mySwiper02 = new Swiper('.student__swiper01',{
+        spaceBetween: 26,
+        initialSlide: 1,
+        slidesPerView: 'auto',
+        speed:500,
+        loop:true,
+        // shortSwipes: false,
+        // longSwipes: false,
+        navigation: {
+            nextEl: '.next02',
+            prevEl: '.prev02'
+        },
+    });
+    let mySwiper03 = new Swiper('.student__swiper02',{
+        spaceBetween: 26,
+        initialSlide: 1,
+        slidesPerView: 'auto',
+        speed:500,
+        loop:true,
+        // shortSwipes: false,
+        // longSwipes: false,
+        navigation: {
+            nextEl: '.next03',
+            prevEl: '.prev03'
+        },
+    });
+    let mySwiper04 = new Swiper('.student__swiper03',{
+        spaceBetween: 26,
+        initialSlide: 1,
+        slidesPerView: 'auto',
+        speed:500,
+        loop:true,
+        // shortSwipes: false,
+        // longSwipes: false,
+        navigation: {
+            nextEl: '.next04',
+            prevEl: '.prev04'
+        },
+    });
+}
+
 
 /**
  * 

@@ -11,10 +11,10 @@
         }
     }
 }
-.main-visual__swiper-wrapper{
+.main-visual__wrapper{
     width: 100%;
 }
-.main-visual__swiper-slide{
+.main-visual__image{
     width: 100%;
     height: 78rem;
     display: flex;
@@ -22,6 +22,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    &_other{
+        align-items: center;
+        justify-content: center;
+        height: 30rem;
+        @include wide-pc{
+            height: 300px;
+        }
+        @include tab{
+            height: 30rem;
+        }
+    }
     &:before{
         content: '';
         width: 100%;
@@ -38,7 +49,18 @@
     @include tab{
         height: 56rem;
     }
-    // iframe{
-    //     height: 40rem;
-    // }
+}
+
+.main-visual__title{
+    display: flex;
+    position: relative;
+    @include font-style(3rem, $color-white, 700);
+    .tax-student &{
+        &:before{
+            content: '\f19d';
+            @include font-style(3.6rem, $color-white, 700);
+            font-family: "Font Awesome 5 Free";
+            margin-right: 1rem;
+        }
+    }
 }
