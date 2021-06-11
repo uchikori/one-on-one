@@ -1,53 +1,87 @@
 let mySwiper = new Swiper('.main-visual__swiper',{
-    autoplay:{
-        delay:3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false,
-		reverseDirection: false
-    },
+    // autoplay:{
+    //     delay:8000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false,
+	// 	reverseDirection: false
+    // },
+    slidesPerView: 1,
     speed:1000,
     loop:true,
     shortSwipes: false,
     longSwipes: false,
     navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
+		nextEl: '.next01',
+		prevEl: '.prev01'
 	},
     pagination:{
         el:'.swiper-pagination',
-        type:'fraction',
-        clickable:false,
-        renderFraction: function(currentClass, totalClass){
-            return '0'+'<span class="'+currentClass+'"></span>'+'<span class="swiper-pagination-border"></span>'+'0'+'<span class="'+totalClass+'"></span>';
-        }
+        type:'bullets',
+        clickable: true
     }
 });
-let mySwiper02 = new Swiper('.text-place-swiper02',{
+let mySwiper02 = new Swiper('.student__swiper01',{
+    spaceBetween: 26,
+    initialSlide: 1,
+    slidesPerView: 'auto',
+    speed:500,
     loop:true,
-    slideToClickedSlide: true,
-    controller:{
-        control: mySwiper,
-        inverse: false,
-        by: 'slide'
-    },
-    slidesPerView:1,
-    slideToClickedSlide: true,
-});
-mySwiper.controller.control = mySwiper02;
-
+    // shortSwipes: false,
+    // longSwipes: false,
+    navigation: {
+		nextEl: '.next02',
+		prevEl: '.prev02'
+	},
+})
+let mySwiper03 = new Swiper('.student__swiper02',{
+    spaceBetween: 26,
+    initialSlide: 1,
+    slidesPerView: 'auto',
+    speed:500,
+    loop:true,
+    // shortSwipes: false,
+    // longSwipes: false,
+    navigation: {
+		nextEl: '.next03',
+		prevEl: '.prev03'
+	},
+})
+let mySwiper04 = new Swiper('.student__swiper03',{
+    spaceBetween: 26,
+    initialSlide: 1,
+    slidesPerView: 'auto',
+    speed:500,
+    loop:true,
+    // shortSwipes: false,
+    // longSwipes: false,
+    navigation: {
+		nextEl: '.next04',
+		prevEl: '.prev04'
+	},
+})
 
 /**
  * 
  * menu-open
  * 
  */
-const humberger = document.querySelector('.header__humberger');
-const menuToggle = document.querySelector('.header__global-navi');
+const humberger = document.querySelector('.humberger');
+const menuToggle = document.querySelector('.global-navi');
 humberger.addEventListener('click', function(){
-    humberger.classList.toggle('js-menu-active');
-    if(humberger.classList.contains('js-menu-active')){
-        menuToggle.classList.add('js-open');
+    humberger.classList.toggle('menu-active');
+    if(humberger.classList.contains('menu-active')){
+        menuToggle.classList.add('menu-open');
     } else {
-        menuToggle.classList.remove('js-open');
+        menuToggle.classList.remove('menu-open');
     }
 });
+
+
+/**
+ * 
+ * ソート部分反転
+ * 
+ */
+jQuery('.js-sort').click(function(){
+    jQuery(this).find('.js-sort-icon').toggleClass('sort-reverse');
+})
