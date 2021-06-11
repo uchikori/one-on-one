@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCHIWA Creative Studio.| 札幌市のWeb制作・ホームページ制作</title>
+  <link rel="stylesheet" href="dist/css/swiper.min.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'kxj4yoo',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="src/js/infinite-scroll.pkgd.min.js"></script>
+</head>
+<body class="tax-student">
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="header__top">
+        <h1 class="header__logo">WebDesign 1on1Lesson-ch</h1>
+      </div>
+      <div class="header__remote-navi">
+        <form class="search header__search">
+          <div class="search__box">
+            <input type="text" class="search__input" name="s" placeholder="キーワード検索">
+            <button type="submit" class="search__submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+        <a href="/page-mypage.html" class="user-config">
+          <i class="fas fa-user-cog"></i>
+        </a>
+      </div>
+      <nav class="toggle-menu header__toggle-menu">
+        <ul class="toggle-menu__inner container">
+          <li class="toggle-menu__item">
+            <a class="toggle-menu__link" href="/taxonomy-student.html">
+              <i class="fas fa-graduation-cap"></i>
+              生徒をみる
+            </a>
+          </li>
+          <li class="toggle-menu__item">
+            <a class="toggle-menu__link" href="/taxonomy-class-class.html">
+              <i class="fas fa-tv"></i>
+              授業を見る
+            </a>
+          </li>
+          <li class="toggle-menu__item margin-right-cancell">
+            <a class="toggle-menu__link" href="/">
+              <i class="fas fa-key"></i>
+              ログアウト
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="global-navi">
+        <form class="search_size_l global-navi__search">
+          <div class="search__box">
+            <input type="text" class="search__input" name="s" placeholder="キーワード検索">
+            <button type="submit" class="search__submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <ul class="global-navi__list">
+          <li class="global-navi__item">
+            <a href="/" class="global-navi__link">
+              <i class="fas fa-home"></i>
+              ホーム
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/taxonomy-student.html" class="global-navi__link">
+              <i class="fas fa-graduation-cap"></i>
+              生徒をみる
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/taxonomy-class.html" class="global-navi__link">
+              <i class="fas fa-tv"></i>
+              授業を見る
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/archive.html" class="global-navi__link">
+              <i class="fas fa-bullhorn"></i>
+              お知らせ
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-mypage.html" class="global-navi__link">
+              <i class="fas fa-user-cog"></i>
+              マイページ
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/" class="global-navi__link">
+              <i class="fas fa-key"></i>
+              ログアウト
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-contact.html" class="global-navi__link">
+              <i class="fas fa-envelope"></i>
+              お問い合わせ
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-privacy.html" class="global-navi__link">
+              個人情報保護方針
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-termsofservice.html" class="global-navi__link">
+              利用規約
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-law.html" class="global-navi__link">
+              特定商取引法に基づく表記
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="humberger js-humberger">
+        <span class="humberger__line"></span>
+        <span class="humberger__line"></span>
+      </div>
+    </header><!-- /header -->
+
+    <!-- main-visual -->
+    <div class="main-visual">
+      <div class="main-visual__swiper">
+        <div class="main-visual__wrapper">
+          <div class="main-visual__image_other" style="background-image: url('dist/images/main-slide01.jpg');">
+            <h2 class="main-visual__title">生徒一覧</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /main-visual -->
+
+    <!-- mainContents -->
+    <main class="main-contents">
+      <section class="student">
+        <div class="student__inner container">
+          <div class="student-media">
+            <div class="student-media__image_large">
+              <img src="dist/images/account_mizuno.png" alt="account_mizuno">
+            </div>
+            <div class="student-media__body">
+              <a class="student-media__student-name" href="/">Mizunoくん</a>
+              <h2 class="student-media__title">
+                バナーデザインで学ぶデザインの基本
+              </h2>
+              <div class="student-media__tag tag">
+                <i class="fas fa-tags"></i>
+                <a href="/" class="student-media__tag-link tag__link">バナーデザイン</a>
+              </div>
+              <div class="student-media__meta meta">
+                <div class="student-media__meta-info meta-info movie-amount meta-info-margin-right"><i class="fas fa-tv"></i>27本</div>
+                <div class="student-media__meta-info meta-info period">2018年8月〜2018年9月</div>
+              </div>
+            </div>
+            <a class="link-btn student-media__link" href="/term-yuri.html"><i class="fas fa-info-circle"></i>詳しく見る</a>
+          </div>
+          <p class="description student__description">
+            大学生のMizunoくんへ、バナーデザインを教材にデザインの基礎をレクチャーします。デザインの四大原則である［近接・整列・強弱・反復］や、配色の［色相・明度・彩度］などデザインの基本を丁寧に解説しています。Photoshopの基本操作や、切り抜き、写真の補正など、オペレーションについても学習します。
+          </p>
+        </div>
+      </section>
+      <section class="student bg-gray">
+        <div class="student__inner container">
+          <div class="student-media">
+            <div class="student-media__image_large">
+              <img src="dist/images/account_yuri.png" alt="account_yuri">
+            </div>
+            <div class="student-media__body">
+              <a class="student-media__student-name" href="/">Yuriさん</a>
+              <h2 class="student-media__title">
+                転職に活用するポートフォリオサイト制作
+              </h2>
+              <div class="student-media__tag tag">
+                <i class="fas fa-tags"></i>
+                <a href="/" class="student-media__tag-link tag__link">デザインカンプ</a>
+                <a href="/" class="student-media__tag-link tag__link">HTML</a>
+                <a href="/" class="student-media__tag-link tag__link">CSS</a>
+                <a href="/" class="student-media__tag-link tag__link">WordPress</a>
+                <a href="/" class="student-media__tag-link tag__link">バナーデザイン</a>
+              </div>
+              <div class="student-media__meta meta">
+                <div class="student-media__meta-info meta-info movie-amount meta-info-margin-right"><i class="fas fa-tv"></i>16本</div>
+                <div class="student-media__meta-info meta-info period">2019年8月〜現在</div>
+              </div>
+            </div>
+            <a class="link-btn student-media__link" href="/term-yuri.html"><i class="fas fa-info-circle"></i>詳しく見る</a>
+          </div>
+          <p class="description student__description">
+            Webデザイナーを目指すyuriさんと一緒に、ポートフォリオサイト制作を教材にWebサイト制作全般をレクチャーします。ワイヤーフレームからデザインカンプの作り方、HTML・CSSコーディングからWordPressの組込まで、現場で行う制作工程と同じ流れでサイト制作を学習します。
+          </p>
+        </div>
+      </section>
+      <section class="student">
+        <div class="student__inner container">
+          <div class="student-media">
+            <div class="student-media__image_large">
+              <img src="dist/images/account_hirada.png" alt="account_hirada">
+            </div>
+            <div class="student-media__body">
+              <a class="student-media__student-name" href="/">Hiradaさん</a>
+              <h2 class="student-media__title">
+                元Webデザイナーがモダンなサイト制作を学ぶ
+              </h2>
+              <div class="student-media__tag tag">
+                <i class="fas fa-tags"></i>
+                <a href="/" class="student-media__tag-link tag__link">ワイヤーフレーム</a>
+                <a href="/" class="student-media__tag-link tag__link">デザインカンプ</a>
+                <a href="/" class="student-media__tag-link tag__link">HTML</a>
+                <a href="/" class="student-media__tag-link tag__link">CSS</a>
+                <a href="/" class="student-media__tag-link tag__link">WordPress</a>
+              </div>
+              <div class="student-media__meta meta">
+                <div class="student-media__meta-info meta-info movie-amount meta-info-margin-right"><i class="fas fa-tv"></i>6本</div>
+                <div class="student-media__meta-info meta-info period">2019年8月〜現在</div>
+              </div>
+            </div>
+            <a class="link-btn student-media__link" href="/term-yuri.html"><i class="fas fa-info-circle"></i>詳しく見る</a>
+          </div>
+          <p class="description student__description">
+            元WebデザイナーのHiradaさんへ、現在行われているモダンなWebサイト制作をレクチャーします。HTML5で追加された要素やCSS3の解説など、過去の制作を振り返りながら［今の制作］を伝えます。自身のメディアサイト公開を目標に、WordPressの組込まで学習します。
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- /mainContents -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <nav class="footer__menu container">
+        <ul class="footer__menu-items">
+          <div class="footer__menu-left">
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">ホーム</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">授業を見る</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">生徒を見る</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">お知らせ</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">マイページ</a></li>
+          </div>
+          <div class="footer__menu-right">
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">お問い合わせ</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">個人情報保護方針</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">利用規約</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">特定商取引法に基づく表記</a></li>
+          </div>
+        </ul>
+      </nav>
+      <p class="footer__copyright ly-margin-copy">
+        <small class="footer__copyright-text">Copyright 1on1.design</small>
+      </p>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  
+  
+<!-- Swiper読み込み -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>
