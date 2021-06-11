@@ -29,3 +29,13 @@ git push origin mainContents
 git add -A
 git commit -m[]
 git push origin mainContents
+git add -A
+git commit -m['メインコンテンツ部分完成しました']
+git push orogin mainContents
+git push origin mainContents
+git branch footer
+git branch
+git checkout footer
+git add -A
+git commit -m[]
+git push origin footer

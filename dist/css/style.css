@@ -1089,10 +1089,18 @@ img {
 }
 
 .header__search {
-  width: 240px;
-  width: 15rem;
   margin-right: 24px;
   margin-right: 1.5rem;
+}
+
+.search {
+  width: 240px;
+  width: 15rem;
+}
+
+.search_size_l {
+  width: 320px;
+  width: 20rem;
 }
 
 .search__box {
@@ -1196,8 +1204,6 @@ img {
 }
 
 .global-navi__search {
-  width: 320px;
-  width: 20rem;
   padding: 32px 0;
   padding: 2rem 0;
   border-bottom: solid 1px #151515;
@@ -1374,6 +1380,11 @@ img {
 .main-visual {
   width: 100%;
   position: relative;
+}
+
+.main-visual__student-media {
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 .main-visual__swiper-wrapper {
@@ -1645,11 +1656,6 @@ img {
   font-size: 1.7rem;
   margin-right: 11.2px;
   margin-right: 0.7rem;
-}
-
-.media-margin-bottom {
-  margin-bottom: 80px;
-  margin-bottom: 5rem;
 }
 
 .meta-info-margin-right {
@@ -2035,6 +2041,9 @@ img {
     font-size: 1.6rem;
     margin-right: 0.8rem;
   }
+  .main-visual__student-media {
+    margin-bottom: 3rem;
+  }
   .main-visual__swiper-slide {
     height: 56rem;
   }
@@ -2095,9 +2104,6 @@ img {
   .student-media-mv .student-media__title {
     font-size: 2.4rem;
     line-height: 1.6;
-  }
-  .media-margin-bottom {
-    margin-bottom: 3rem;
   }
   .news {
     height: auto;
@@ -2173,8 +2179,13 @@ img {
     font-size: 13px;
   }
   .header__search {
-    width: 150px;
     margin-right: 15px;
+  }
+  .search {
+    width: 150px;
+  }
+  .search_size_l {
+    width: 200px;
   }
   .search__box {
     height: 30px;
@@ -2201,7 +2212,6 @@ img {
     padding-left: 20px;
   }
   .global-navi__search {
-    width: 200px;
     padding: 20px 0;
   }
   .global-navi__item {
@@ -2236,6 +2246,9 @@ img {
   .toggle-menu__link i {
     font-size: 20px;
     margin-right: 10px;
+  }
+  .main-visual__student-media {
+    margin-bottom: 50px;
   }
   .main-visual__swiper-slide {
     height: 780px;
@@ -2305,9 +2318,6 @@ img {
   .link-btn i {
     font-size: 17px;
     margin-right: 7px;
-  }
-  .media-margin-bottom {
-    margin-bottom: 50px;
   }
   .meta-info-margin-right {
     margin-right: 5px;

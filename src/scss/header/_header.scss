@@ -40,10 +40,8 @@
         }
     }
     &__search{
-        width: 15rem;
         margin-right: 1.5rem;
         @include wide-pc{
-            width: 150px;
             margin-right: 15px;
         }
     }

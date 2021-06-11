@@ -1,6 +1,15 @@
 .main-visual{
     width: 100%;
     position: relative;
+    &__student-media{
+        margin-bottom: 5rem;
+        @include wide-pc{
+            margin-bottom: 50px;
+        }
+        @include tab{
+            margin-bottom: 3rem;
+        }
+    }
 }
 .main-visual__swiper-wrapper{
     width: 100%;

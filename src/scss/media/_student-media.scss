@@ -2,7 +2,6 @@
     display: flex;
     z-index: 11;
     align-items: center;
-
     @include tab{
         flex-direction: column;
     }
@@ -133,15 +132,6 @@
             font-size: 17px;
             margin-right: 7px;
         }
-    }
-}
-.media-margin-bottom{
-    margin-bottom: 5rem;
-    @include wide-pc{
-        margin-bottom: 50px;
-    }
-    @include tab{
-        margin-bottom: 3rem;
     }
 }
 .meta-info-margin-right{

@@ -1,4 +1,14 @@
 .search{
+    width: 15rem;
+    @include wide-pc{
+        width: 150px;
+    }
+    &_size_l{
+        width: 20rem;
+        @include wide-pc{
+            width: 200px;
+        }
+    }
     &__box{
         height: 3rem;
         background-color: $color-button-bg;
