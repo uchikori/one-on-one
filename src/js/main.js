@@ -88,3 +88,18 @@ humberger.addEventListener('click', function(){
 jQuery('.js-sort').click(function(){
     jQuery(this).find('.js-sort-icon').toggleClass('sort-reverse');
 })
+
+/**
+ * 
+ * Infinite-scroll
+ * 
+ */
+const scrollElm = document.querySelector('.student-movie__media-items');
+if(scrollElm){
+    let infiniteScroll = new InfiniteScroll(scrollElm,{
+        path: '.pagination__next',
+        append: '.student-movie__movie-media',
+        status: '.page-load-status',
+        hideNav: '.pagination',
+    });
+}

@@ -50,3 +50,15 @@ git push origin student
 git add -A
 git commit -m[]
 git push origin student
+git add -A
+git commit -m[]
+git push origin student
+git branch term
+git branch
+git checkout term
+git add -A
+got commit -m[]
+git commit -m[]
+git add -A
+git commit -m[]
+git push origin term

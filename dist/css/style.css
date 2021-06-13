@@ -1025,6 +1025,10 @@ img {
   margin: 0 auto;
 }
 
+.bg-gray {
+  background-color: #464646;
+}
+
 .margin-right-cancell {
   margin-right: 0 !important;
 }
@@ -1707,6 +1711,26 @@ img {
   margin-right: 0.7rem;
 }
 
+.link-btn_hSmall {
+  padding: 0 33.6px;
+  padding: 0 2.1rem;
+  height: 48px;
+  height: 3rem;
+  line-height: 48px;
+  line-height: 3rem;
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  display: inline-block;
+  border-radius: 1.5rem;
+}
+
+.link-btn_hSmall i {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-right: 9.6px;
+  margin-right: 0.6rem;
+}
+
 .meta-info-margin-right {
   margin-right: 8px;
   margin-right: 0.5rem;
@@ -1820,66 +1844,14 @@ img {
   margin-top: 4px;
 }
 
-.student.bg-gray {
-  background-color: #464646;
-}
-
-.description {
-  font-size: 24px;
-  font-size: 1.5rem;
-  color: #eeeeee;
-  font-weight: 500;
-  line-height: 1.8;
-}
-
 .movie-contents {
   width: 100%;
   position: relative;
 }
 
 .movie-contents__sort {
-  width: 168px;
-  width: 10.5rem;
-  padding: 0 16px;
-  padding: 0 1rem;
-  height: 32px;
-  height: 2rem;
-  background-color: #0F0F0F;
-  color: #eeeeee;
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-.movie-contents__sort i {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  margin-left: 9.6px;
-  margin-left: 0.6rem;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.movie-contents__sort i.sort-reverse {
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .movie-contents__items {
@@ -1946,14 +1918,87 @@ img {
   margin-bottom: 0.6rem;
 }
 
-.ly-sort-top {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-}
-
 .ly-movie-top {
   margin-right: 41.6px;
   margin-right: 2.6rem;
+}
+
+.student-movie {
+  padding: 112px 0;
+  padding: 7rem 0;
+}
+
+.student-movie__sort {
+  margin-bottom: 64px;
+  margin-bottom: 4rem;
+}
+
+.student-movie__movie-media {
+  border-bottom: 1px solid #3e3e3e;
+  padding-bottom: 80px;
+  padding-bottom: 5rem;
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+
+.student-movie__movie-media:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.movie-media {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movie-media__thumbnail {
+  width: 576px;
+  width: 36rem;
+  height: 323.2px;
+  height: 20.2rem;
+  margin-right: 32px;
+  margin-right: 2rem;
+}
+
+.movie-media__meta {
+  margin-bottom: 19.2px;
+  margin-bottom: 1.2rem;
+}
+
+.movie-media__title {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  color: #eeeeee;
+  font-weight: 700;
+  line-height: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 9.6px;
+  margin-bottom: 0.6rem;
+}
+
+.movie-media__post-time {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+
+.movie-media__description {
+  max-width: 928px;
+  max-width: 58rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .meta {
@@ -2003,11 +2048,21 @@ img {
   margin-bottom: 1.8rem;
 }
 
+.movie-media .tag {
+  margin-bottom: 14.4px;
+  margin-bottom: 0.9rem;
+}
+
 .tag i {
   font-size: 19.2px;
   font-size: 1.2rem;
   margin-right: 3.2px;
   margin-right: 0.2rem;
+}
+
+.tag__link {
+  display: inline-block;
+  line-height: 1;
 }
 
 .student-media .tag__link {
@@ -2020,6 +2075,66 @@ img {
   font-size: 1.2rem;
   color: #eeeeee;
   font-weight: 700;
+}
+
+.movie-media .tag__link {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  color: #eeeeee;
+  font-weight: 700;
+}
+
+.sort {
+  width: 168px;
+  width: 10.5rem;
+  padding: 0 16px;
+  padding: 0 1rem;
+  height: 32px;
+  height: 2rem;
+  background-color: #0F0F0F;
+  color: #eeeeee;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.sort i {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-left: 9.6px;
+  margin-left: 0.6rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.sort i.sort-reverse {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.description {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #eeeeee;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 .footer {
@@ -2201,9 +2316,6 @@ img {
   .student__description {
     padding: 1rem 0;
   }
-  .description {
-    font-size: 1.2rem;
-  }
   .movie-contents__item {
     width: calc(50% - 1.3rem);
   }
@@ -2216,6 +2328,9 @@ img {
   .student-media .tag__link {
     font-size: 1.2rem;
   }
+  .description {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2224,6 +2339,17 @@ img {
   }
   .movie-contents__item {
     width: 100%;
+  }
+  .movie-media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .movie-media__thumbnail {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
   .footer__menu {
     -webkit-box-pack: start;
@@ -2401,6 +2527,10 @@ img {
     font-size: 17px;
     margin-right: 7px;
   }
+  .link-btn_hSmall i {
+    font-size: 15px;
+    margin-right: 6px;
+  }
   .meta-info-margin-right {
     margin-right: 5px;
   }
@@ -2433,20 +2563,6 @@ img {
   .student__description {
     max-width: 730px;
   }
-  .description {
-    font-size: 15px;
-  }
-  .movie-contents__sort {
-    width: 105px;
-    padding: 0 10px;
-    height: 20px;
-    font-size: 12px;
-    border-radius: 10px;
-  }
-  .movie-contents__sort i {
-    font-size: 12px;
-    margin-left: 6px;
-  }
   .movie-contents__item {
     width: 220px;
   }
@@ -2464,6 +2580,32 @@ img {
     font-size: 15px;
     margin-bottom: 6px;
   }
+  .student-movie {
+    padding: 70px 0;
+  }
+  .student-movie__movie-media {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .movie-media__thumbnail {
+    width: 360px;
+    height: 202px;
+    margin-right: 20px;
+  }
+  .movie-media__meta {
+    margin-bottom: 12px;
+  }
+  .movie-media__title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .movie-media__post-time {
+    margin-right: 5px;
+  }
+  .movie-media__description {
+    max-width: 580px;
+    margin-bottom: 40px;
+  }
   .meta-info {
     height: 20px;
     font-size: 12px;
@@ -2474,6 +2616,9 @@ img {
   .student-media .tag {
     margin-bottom: 18px;
   }
+  .movie-media .tag {
+    margin-bottom: 9px;
+  }
   .tag i {
     font-size: 12px;
     margin-right: 2px;
@@ -2483,6 +2628,23 @@ img {
   }
   .movie-contents .tag__link {
     font-size: 12px;
+  }
+  .movie-media .tag__link {
+    font-size: 12px;
+  }
+  .sort {
+    width: 105px;
+    padding: 0 10px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  .sort i {
+    font-size: 12px;
+    margin-left: 6px;
+  }
+  .description {
+    font-size: 15px;
   }
   .footer {
     padding: 66px 0 20px 0;
