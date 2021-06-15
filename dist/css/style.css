@@ -1943,7 +1943,6 @@ img {
 
 .student-movie__movie-media:last-child {
   border-bottom: none;
-  padding-bottom: 0;
   margin-bottom: 0;
 }
 
@@ -2135,6 +2134,55 @@ img {
   color: #eeeeee;
   font-weight: 500;
   line-height: 1.8;
+}
+
+.view-more-button {
+  width: 100%;
+  text-align: center;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  color: #eeeeee;
+  font-weight: 700;
+  line-height: 3;
+  background-color: #383838;
+  border-radius: 2.1rem;
+  display: inline-block;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.view-more-button:hover {
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="2" /><feFuncG type="linear" slope="2" /><feFuncB type="linear" slope="2" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+.inifinite__btn-margin {
+  margin: 48px 0;
+  margin: 3rem 0;
+}
+
+.infinite-scroll-error {
+  width: 100%;
+  text-align: center;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  color: #eeeeee;
+  font-weight: 700;
+  line-height: 3;
+  background-color: #383838;
+  border-radius: 2.1rem;
+  display: inline-block;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
 .footer {
@@ -2645,6 +2693,17 @@ img {
   }
   .description {
     font-size: 15px;
+  }
+  .view-more-button {
+    font-size: 14px;
+    border-radius: 21px;
+  }
+  .inifinite__btn-margin {
+    margin: 30px 0;
+  }
+  .infinite-scroll-error {
+    font-size: 14px;
+    border-radius: 21px;
   }
   .footer {
     padding: 66px 0 20px 0;

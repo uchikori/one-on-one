@@ -103,6 +103,8 @@ if (scrollElm) {
     path: '.pagination__next',
     append: '.student-movie__movie-media',
     status: '.page-load-status',
-    hideNav: '.pagination'
+    hideNav: '.pagination',
+    button: '.view-more-button',
+    scrollThreshold: false
   });
 }

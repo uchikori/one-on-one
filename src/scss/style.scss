@@ -366,7 +366,7 @@ img{
         }
         &:last-child{
             border-bottom: none;
-            padding-bottom: 0;
+            // padding-bottom: 0;
             margin-bottom: 0;
         }
     }
@@ -455,6 +455,12 @@ img{
 //  description
 //-------------------------------
 @import '_description.scss';
+
+//-------------------------------
+//  Infinite scroll
+//-------------------------------
+@import '_inifinite-scroll.scss';
+
 
 //-------------------------------
 //  footer

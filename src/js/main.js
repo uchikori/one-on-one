@@ -101,5 +101,7 @@ if(scrollElm){
         append: '.student-movie__movie-media',
         status: '.page-load-status',
         hideNav: '.pagination',
+        button: '.view-more-button',
+        scrollThreshold: false,
     });
 }

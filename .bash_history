@@ -62,3 +62,6 @@ git commit -m[]
 git add -A
 git commit -m[]
 git push origin term
+git add -A
+git commit -m[]
+git push origin term
