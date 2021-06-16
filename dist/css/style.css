@@ -1210,13 +1210,13 @@ img {
 .global-navi__search {
   padding: 32px 0;
   padding: 2rem 0;
-  border-bottom: solid 1px #151515;
+  border-bottom: solid 1px #3e3e3e;
 }
 
 .global-navi__item {
   padding: 41.6px 0;
   padding: 2.6rem 0;
-  border-bottom: solid 1px #151515;
+  border-bottom: solid 1px #3e3e3e;
   background-color: #0F0F0F;
   font-size: 22.4px;
   font-size: 1.4rem;
@@ -1463,6 +1463,17 @@ img {
 
 .tax-student .main-visual__title:before {
   content: '\f19d';
+  font-size: 57.6px;
+  font-size: 3.6rem;
+  color: #eeeeee;
+  font-weight: 700;
+  font-family: "Font Awesome 5 Free";
+  margin-right: 16px;
+  margin-right: 1rem;
+}
+
+.tax-class .main-visual__title:before {
+  content: '\f26c';
   font-size: 57.6px;
   font-size: 3.6rem;
   color: #eeeeee;
@@ -2185,6 +2196,98 @@ img {
   transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
+.class {
+  padding: 113.6px 0;
+  padding: 7.1rem 0;
+}
+
+.class__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.class__term-list {
+  padding-left: 80px;
+  padding-left: 5rem;
+  border-right: solid 1px #3e3e3e;
+}
+
+.term-list {
+  width: 406.4px;
+  width: 25.4rem;
+}
+
+.term-list__title {
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  color: #eeeeee;
+  font-weight: 700;
+  line-height: 41.6px;
+  line-height: 2.6rem;
+  height: 41.6px;
+  height: 2.6rem;
+  background-color: #2C2C2C;
+  padding: 0 36.8px;
+  padding: 0 2.3rem;
+  display: inline-block;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+
+.term-list__title i {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-right: 4.8px;
+  margin-right: 0.3rem;
+}
+
+.term-list__item {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+.list__link {
+  padding: 0 24px;
+  padding: 0 1.5rem;
+  height: 64px;
+  height: 4rem;
+  background-color: #0F0F0F;
+  color: #eeeeee;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 64px;
+  line-height: 4rem;
+  display: inline-block;
+  border-radius: 2rem;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.list__link:hover {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.5" /><feFuncG type="linear" slope="1.5" /><feFuncB type="linear" slope="1.5" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.list__link i {
+  font-size: 20.8px;
+  font-size: 1.3rem;
+  margin-right: 6.4px;
+  margin-right: 0.4rem;
+}
+
 .footer {
   width: 100%;
   background-color: #0F0F0F;
@@ -2379,6 +2482,15 @@ img {
   .description {
     font-size: 1.2rem;
   }
+  .class__inner:after {
+    content: '';
+    display: block;
+    width: 25.4rem;
+  }
+  .class__term-list {
+    border-right: none;
+    margin-bottom: 6rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2507,6 +2619,9 @@ img {
     font-size: 30px;
   }
   .tax-student .main-visual__title:before {
+    font-size: 36px;
+  }
+  .tax-class .main-visual__title:before {
     font-size: 36px;
   }
   .swiper-button-next.next01 {
@@ -2704,6 +2819,40 @@ img {
   .infinite-scroll-error {
     font-size: 14px;
     border-radius: 21px;
+  }
+  .class__inner {
+    padding: 71px;
+  }
+  .class__term-list {
+    padding-left: 50px;
+  }
+  .term-list {
+    width: 254px;
+  }
+  .term-list__title {
+    font-size: 14px;
+    height: 26px;
+    padding: 0 23px;
+    margin-bottom: 30px;
+    line-height: 26px;
+  }
+  .term-list__title i {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .term-list__item {
+    margin-bottom: 10px;
+  }
+  .list__link {
+    padding: 0 15px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 40px;
+    line-height: 40px;
+  }
+  .list__link i {
+    font-size: 13px;
+    margin-right: 4px;
   }
   .footer {
     padding: 66px 0 20px 0;

@@ -15,6 +15,7 @@ $color-button-bg: #2C2C2C;
 $color-head-gray: #666666;
 $color-border:    #151515;
 $color-watched:   #B1A516; 
+$color-border:    #3e3e3e;
 /*font-size, font-color, line-height指定*/
 @mixin font-style($font-size, $font-color, $font-weight){
     font-size: $font-size;

@@ -65,3 +65,9 @@ git push origin term
 git add -A
 git commit -m[]
 git push origin term
+git add -A
+git commit -m[]
+git push origin tem
+git push origin term
+git branch class
+git checkout class

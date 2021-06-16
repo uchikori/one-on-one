@@ -348,93 +348,7 @@ img{
 //-------------------------------
 //  student-movie
 //-------------------------------
-.student-movie{
-    padding: 7rem 0;
-    @include wide-pc{
-        padding: 70px 0;
-    }
-    &__sort{
-        margin-bottom: 4rem;
-    }
-    &__movie-media{
-        border-bottom: 1px solid #3e3e3e;
-        padding-bottom: 5rem;
-        margin-bottom: 5rem;
-        @include wide-pc{
-            padding-bottom: 50px;
-            margin-bottom: 50px;
-        }
-        &:last-child{
-            border-bottom: none;
-            // padding-bottom: 0;
-            margin-bottom: 0;
-        }
-    }
-}
-
-//-------------------------------
-//  movie-media
-//-------------------------------
-.movie-media{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    @include sp{
-        flex-direction: column;
-    }
-    &__thumbnail{
-        width: 36rem;
-        height: 20.2rem;
-        margin-right: 2rem;
-        @include wide-pc{
-            width: 360px;
-            height: 202px;
-            margin-right: 20px;
-        }
-        @include sp{
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 2rem;
-        }
-    }
-    &__meta{
-        margin-bottom: 1.2rem;
-        @include wide-pc{
-            margin-bottom: 12px;
-        }
-    }
-    &__title{
-        @include font-style(1.8rem, $color-white, 700);
-        line-height: 1;
-        display: -webkit-box;
-        overflow: hidden;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        margin-bottom: 0.6rem;
-        @include wide-pc{
-            font-size: 18px;
-            margin-bottom: 6px;
-        }
-    }
-    &__post-time{
-        margin-right: 0.5rem;
-        @include wide-pc{
-            margin-right: 5px;
-        }
-    }
-    &__description{
-        max-width: 58rem;
-        display: -webkit-box;
-        overflow: hidden;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        margin-bottom: 4rem;
-        @include wide-pc{
-            max-width: 580px;
-            margin-bottom: 40px;
-        }
-    }
-}
+@import 'movie/_student-movie.scss';
 
 //-------------------------------
 //  meta
@@ -461,6 +375,111 @@ img{
 //-------------------------------
 @import '_inifinite-scroll.scss';
 
+//-------------------------------
+//  Class(授業一覧)
+//-------------------------------
+.class{
+    padding: 7.1rem 0;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include wide-pc{
+            padding: 71px;
+        }
+        @include tab{
+            &:after{
+                content: '';
+                display: block;
+                width: 25.4rem;
+            }
+        }
+    }
+    &__term-list{
+        padding-left: 5rem;
+        border-right: solid 1px $color-border;
+        @include wide-pc{
+            padding-left: 50px;
+        }
+        @include tab{
+            border-right: none;
+            margin-bottom: 6rem;
+            
+        }
+    }
+}
+
+//-------------------------------
+//  List-tag
+//-------------------------------
+.term-list{
+    width: 25.4rem;
+    @include wide-pc {
+        width: 254px;
+    }
+    &__title{
+        @include font-style(1.4rem, $color-white, 700);
+        line-height: 2.6rem;
+        height: 2.6rem;
+        background-color: $color-button-bg;
+        padding: 0 2.3rem;
+        display: inline-block;
+        margin-bottom: 3rem;
+        @include wide-pc{
+            font-size: 14px;
+            height: 26px;
+            padding: 0 23px;
+            margin-bottom: 30px;
+            line-height: 26px;
+        }
+        i{
+            font-size: 1.2rem;
+            margin-right: 0.3rem;
+            @include wide-pc {
+                font-size: 12px;
+                margin-right: 3px;
+            }
+        }
+    }
+    &__item{
+        margin-bottom: 1rem;
+        @include wide-pc{
+            margin-bottom: 10px;
+        }
+    }
+}
+.list{
+    &__link{
+        padding: 0 1.5rem;
+        height: 4rem;
+        background-color: $color-black;
+        color: $color-white;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        display: inline-block;
+        border-radius: 2rem;
+        transition: filter 0.3s ease;
+        &:hover{
+            filter: brightness(150%);
+            transition: filter 0.3s ease;
+        }
+        @include wide-pc{
+            padding: 0 15px;
+            height: 40px;
+            font-size: 15px;
+            border-radius:40px;
+            line-height: 40px;
+        }
+        i{
+            font-size: 1.3rem;
+            margin-right: 0.4rem;
+            @include wide-pc{
+                font-size: 13px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
 
 //-------------------------------
 //  footer
