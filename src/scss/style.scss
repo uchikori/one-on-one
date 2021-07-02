@@ -37,6 +37,7 @@ img{
     object-fit: cover;
     // vertical-align: middle;
 }
+
 .wrapper{
     overflow-x: hidden;
 }
@@ -79,7 +80,7 @@ img{
 // Swiperの上書き用CSS
 .swiper-button-next{
     outline: none;
-    &.next01{
+    &.main-next{
         right: 5rem;
         @include wide-pc{
             right: 50px;
@@ -148,7 +149,7 @@ img{
 }
 .swiper-button-prev{
     outline: none;
-    &.prev01{
+    &.main-prev{
         left: 5rem;
         @include wide-pc{
             right: 50px;
@@ -480,6 +481,44 @@ img{
         }
     }
 }
+
+//-------------------------------
+//  Search-results
+//-------------------------------
+.search-results{
+    &__head{
+        padding-top: 7rem;
+        text-align: center;
+        @include wide-pc{
+            padding-top: 70px;
+        }
+    }
+    &__title{
+        @include font-style(2.2rem, $color-white, 700);
+        @include wide-pc{
+            font-size: 22px;
+        }
+        @include tab{
+            font-size: 2rem;
+        }
+        &:before{
+            content: '\f002';
+            @include font-style(2.6rem, $color-white, 700);
+            font-family: "Font Awesome 5 Free";
+            @include wide-pc{
+                font-size: 26px;
+            }
+            @include tab{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+//-------------------------------
+//  Single-custom
+//-------------------------------
+@import 'single/_single-custom.scss';
 
 //-------------------------------
 //  footer

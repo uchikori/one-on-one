@@ -14,7 +14,7 @@
         background-color: $color-button-bg;
         border-radius: 8rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         padding: 0 1.5rem;
@@ -28,17 +28,23 @@
         @include font-style(1.3rem, $color-head-gray, 700);
         display: inline-block;
         line-height: 1;
-        max-width: 100%;
+        width: 100%;
         @include wide-pc {
             font-size: 13px;
         }
     }
     &__submit{
-        i{
-            @include font-style(1.3rem, $color-head-gray, 700);
-            line-height: 1;
-            @include wide-pc{
-                font-size: 13px;
+        &-button{
+            background-image: url('../images/search.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
+            width: 1.3rem;
+            height: 1.3rem;
+            @include wide-pc {
+                width: 13px;
+                height: 13px;
             }
         }
     }

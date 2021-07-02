@@ -71,3 +71,10 @@ git push origin tem
 git push origin term
 git branch class
 git checkout class
+git add -A
+git commit -m[]
+git push origin class
+git branch
+git branch term-design
+git branch
+git checkout term-design

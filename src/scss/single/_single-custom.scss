@@ -1,0 +1,194 @@
+.single-custom{
+    &__body{
+        padding: 7rem 0;
+        @include wide-pc{
+            padding: 70px 0;
+        }
+    }
+    &__video{
+        margin-bottom: 4.5rem;
+        @include wide-pc{
+            margin-bottom: 45px;
+        }
+    }
+    &__meta{
+        margin-bottom: 0.9rem;
+        @include wide-pc {
+            margin-bottom: 9px;
+        }
+    }
+    &__h1{
+        @include font-style(2.8rem, $color-white, 700);
+        line-height: 1.4;
+        margin-bottom: 0.8rem;
+        @include wide-pc {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        @include tab{
+            font-size: 2rem;
+        }
+    }
+    &__h2{
+        @include font-style(1.4rem, $color-white, 700);
+        padding: 0 1rem;
+        height: 2.6rem;
+        line-height: 2.6rem;
+        display: inline-block;
+        background-color: $color-button-bg;
+        @include wide-pc {
+            font-size: 14px;
+            padding: 0 10px;
+            height: 26px;
+            line-height: 26px;
+        }
+        i{
+            @include font-style(1.2rem, $color-white, 700);
+            @include wide-pc{
+                font-size: 12px;
+            }
+        }
+    }
+    .tag__link{
+        @include font-style(1.2rem, $color-white, 700);
+        @include wide-pc{
+            font-size: 12px;
+        }
+    }
+}
+
+.study__video{
+    width: 100%;
+    height: 54rem;
+    @include wide-pc {
+        height: 540px;
+    }
+    @include tab{
+        height: auto;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.study-summary{
+    &__list{
+        @include font-style(1.5rem, $color-white, 500);
+        line-height: 1.8;
+        padding-left: 1.6rem;
+        text-indent: -1.6rem;
+        &:before{
+            content: "●";
+            font-size: 1.2rem;
+            margin-right: 0.4rem;
+        }
+        @include wide-pc{
+            font-size: 15px;
+            padding-left: 16px;
+            text-indent: -16px;
+            &:before{
+                margin-right: 4px;
+                font-size: 12px;
+            }
+        }
+        @include tab{
+            font-size: 1.2rem;
+            &:before{
+                margin-right: 0.4rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.study-description__text{
+    @include font-style(1.5rem, $color-white, 500);
+    line-height: 1.8;
+    @include wide-pc {
+        font-size: 15px;
+    }
+    @include tab{
+        font-size: 1.2rem;
+    }
+}
+.two-column{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    @include wide-pc {
+        margin-top: 40px;
+    }
+    @include tab{
+        flex-direction: column;
+    }
+    &__first{
+        max-width: 46rem;
+        @include wide-pc {
+            max-width: 460px;
+        }
+        @include tab{
+            max-width: 100%;
+            margin-bottom: 4rem;
+        }
+    }
+    &__second{
+        max-width: 46rem;
+        @include wide-pc {
+            max-width: 460px;
+        }
+        @include tab{
+            max-width: 100%;
+        }
+    }
+    &__h2{
+        margin-bottom: 1.8rem;
+        @include wide-pc{
+            margin-bottom: 18px;
+        }
+    }
+}
+.page-navi{
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    padding: 7rem 0;
+    @include wide-pc {
+        padding: 70px 0;
+    }
+    @include tab{
+        padding: 4rem 0;
+    }
+    &__half-block{
+        width: 50%;
+    }
+    &__wrap{
+        display: flex;
+    }
+    &__button{
+        display: block;
+        padding: 0 1.2rem;
+        @include font-style(1.4rem, $color-white, 700);
+        width: 9.5rem;
+        height: 2.6rem;
+        line-height: 2.6rem;
+        background-color: $color-button-bg;
+        transition: opacity 0.3s ease;
+        margin: 0 auto;
+        & :hover{
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        i{
+            @include font-style(1.2rem, $color-white, 700);
+        }
+        @include wide-pc{
+            padding: 0 12px;
+            font-size: 14px;
+            width: 95px;
+            height: 26px;
+            line-height: 26px;
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+}

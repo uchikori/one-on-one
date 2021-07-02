@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCHIWA Creative Studio.| 札幌市のWeb制作・ホームページ制作</title>
+  <link rel="stylesheet" href="dist/css/swiper.min.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'kxj4yoo',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="src/js/infinite-scroll.pkgd.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="header__top">
+        <h1 class="header__logo">WebDesign 1on1Lesson-ch</h1>
+      </div>
+      <div class="header__remote-navi">
+        <form class="search header__search">
+          <div class="search__box">
+            <input type="text" class="search__input" name="s" placeholder="キーワード検索">
+            <button type="submit" class="search__submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+        <a href="/page-mypage.html" class="user-config">
+          <i class="fas fa-user-cog"></i>
+        </a>
+      </div>
+      <nav class="toggle-menu header__toggle-menu">
+        <ul class="toggle-menu__inner container">
+          <li class="toggle-menu__item">
+            <a class="toggle-menu__link" href="/taxonomy-student.html">
+              <i class="fas fa-graduation-cap"></i>
+              生徒をみる
+            </a>
+          </li>
+          <li class="toggle-menu__item">
+            <a class="toggle-menu__link" href="/taxonomy-class.html">
+              <i class="fas fa-tv"></i>
+              授業を見る
+            </a>
+          </li>
+          <li class="toggle-menu__item margin-right-cancell">
+            <a class="toggle-menu__link" href="/">
+              <i class="fas fa-key"></i>
+              ログアウト
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="global-navi">
+        <form class="search_size_l global-navi__search">
+          <div class="search__box">
+            <input type="text" class="search__input" name="s" placeholder="キーワード検索">
+            <button type="submit" class="search__submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <ul class="global-navi__list">
+          <li class="global-navi__item">
+            <a href="/" class="global-navi__link">
+              <i class="fas fa-home"></i>
+              ホーム
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/taxonomy-student.html" class="global-navi__link">
+              <i class="fas fa-graduation-cap"></i>
+              生徒をみる
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/taxonomy-class.html" class="global-navi__link">
+              <i class="fas fa-tv"></i>
+              授業を見る
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/archive.html" class="global-navi__link">
+              <i class="fas fa-bullhorn"></i>
+              お知らせ
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-mypage.html" class="global-navi__link">
+              <i class="fas fa-user-cog"></i>
+              マイページ
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/" class="global-navi__link">
+              <i class="fas fa-key"></i>
+              ログアウト
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-contact.html" class="global-navi__link">
+              <i class="fas fa-envelope"></i>
+              お問い合わせ
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-privacy.html" class="global-navi__link">
+              個人情報保護方針
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-termsofservice.html" class="global-navi__link">
+              利用規約
+            </a>
+          </li>
+          <li class="global-navi__item">
+            <a href="/page-law.html" class="global-navi__link">
+              特定商取引法に基づく表記
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="humberger js-humberger">
+        <span class="humberger__line"></span>
+        <span class="humberger__line"></span>
+      </div>
+    </header><!-- /header -->
+
+    <!-- main-visual -->
+    <div class="main-visual">
+      <div class="main-visual__swiper">
+        <div class="main-visual__wrapper">
+          <div class="main-visual__image_other" style="background-image: url('dist/images/main-slide01.jpg');">
+            <h2 class="main-visual__title">Yuriさん</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /main-visual -->
+
+    <!-- mainContents -->
+    <main class="main-contents">
+      <section class="single-custom">
+        <div class="single-custom__inner container">
+            <article class="single-custom__body">
+                <figure class="single-custom__video study__video">
+                    <video src="dist/images/mockup-video02.mp4" controls playsinline></video>
+                </figure>
+                <div class="single-custom__meta meta">
+                    <time class="movie-media__post-time meta-info">2019年8月2日</time>
+                    <div class="movie-media__watched meta-info">未視聴</div>
+                </div>
+                <h1 class="single-custom__h1">
+                    <span>#01</span>
+                    デザインカンプへのフィードバック
+                </h1>
+                <div class="single-custom__tag tag">
+                    <i class="fas fa-tags"></i>
+                    <a href="/" class="movie-contents__tag-link tag__link">デザインカンプ</a>
+                </div>
+                <div class="two-column">
+                    <section class="two-column__first study-summary">
+                        <h2 class="two-column__h2 single-custom__h2">
+                            <i class="fas fa-check"></i>
+                            授業の要約
+                        </h2>
+                        <ul class="study-summary__lists">
+                            <li class="study-summary__list">こちらに動画の要約が入ります。こちらに動画の要約が入ります。</li>
+                            <li class="study-summary__list">こちらに動画の要約が入ります。こちらに動画の要約が入ります。</li>
+                            <li class="study-summary__list">こちらに動画の要約が入ります。こちらに動画の要約が入ります。</li>
+                        </ul>
+                    </section>
+                    <section class="two-column__second study-description">
+                        <h2 class="two-column__h2 single-custom__h2">
+                            <i class="fas fa-pen"></i>
+                            授業の概要
+                        </h2>
+                        <p class="study-description__text">
+                            こちらに動画の説明文が入ります。こちらに動画の説明文が入ります。こちらに動画の説明文が入ります。こちらに動画の説明文が入ります。
+                        </p>
+                    </section>
+                </div>
+            </article>
+            <nav class="page-navi bg-gray">
+                <div class="page-navi__wrap container">
+                    <div class="page-navi__half-block page-navi__prev">
+                        <a class="page-navi__button" href="/">
+                            <i class="fas fa-chevron-left"></i>
+                            前の授業
+                        </a>
+                    </div>
+                    <div class="page-navi__half-block page-navi__next">
+                        <a class="page-navi__button" href="/">
+                            次の授業
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+               
+            </nav>
+
+        </div>
+      </section>
+    </main>
+    <!-- /mainContents -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <nav class="footer__menu container">
+        <ul class="footer__menu-items">
+          <div class="footer__menu-left">
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">ホーム</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">授業を見る</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">生徒を見る</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">お知らせ</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">マイページ</a></li>
+          </div>
+          <div class="footer__menu-right">
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">お問い合わせ</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">個人情報保護方針</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">利用規約</a></li>
+            <li class="footer__menu-item"><a href="/" class="footer__menu-link">特定商取引法に基づく表記</a></li>
+          </div>
+        </ul>
+      </nav>
+      <p class="footer__copyright ly-margin-copy">
+        <small class="footer__copyright-text">Copyright 1on1.design</small>
+      </p>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  
+  
+<!-- Swiper読み込み -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>
