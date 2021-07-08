@@ -78,3 +78,8 @@ git branch
 git branch term-design
 git branch
 git checkout term-design
+git add -A
+git commit -m[]
+git push origin term-design
+git branch news
+git checkout news

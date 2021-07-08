@@ -235,6 +235,63 @@ img{
 }
 
 //-------------------------------
+//  link-btn
+//-------------------------------
+.link-btn{
+    padding: 0 2rem;
+    height: 4rem;
+    background-color: $color-black;
+    color: $color-white;
+    font-size: 1.4rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 2rem;
+    transition: filter 0.3s ease;
+    &:hover{
+        filter: brightness(150%);
+        transition: filter 0.3s ease;
+    }
+    @include wide-pc{
+        padding: 0 20px;
+        height: 40px;
+        font-size: 14px;
+        border-radius:40px;
+    }
+    i{
+        font-size: 1.7rem;
+        margin-right: 0.7rem;
+        @include wide-pc{
+            font-size: 17px;
+            margin-right: 7px;
+        }
+    }
+}
+.link-btn_hSmall{
+    padding: 0 2.1rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    display: inline-block;
+    border-radius: 1.5rem;
+    @include wide-pc{
+        padding: 0 21px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        border-radius: 15px;
+    }
+    i{
+        font-size: 1.5rem;
+        margin-right: 0.6rem;
+        @include wide-pc{
+            font-size: 15px;
+            margin-right: 6px;
+        }
+    }
+}
+//-------------------------------
 //  student-media
 //-------------------------------
 @import 'media/_student-media.scss';
@@ -381,13 +438,13 @@ img{
 //-------------------------------
 .class{
     padding: 7.1rem 0;
+    @include wide-pc{
+        padding: 71px 0;
+    }
     &__inner{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        @include wide-pc{
-            padding: 71px;
-        }
         @include tab{
             &:after{
                 content: '';
@@ -405,7 +462,6 @@ img{
         @include tab{
             border-right: none;
             margin-bottom: 6rem;
-            
         }
     }
 }
@@ -511,6 +567,159 @@ img{
             @include tab{
                 font-size: 1.6rem;
             }
+        }
+    }
+}
+
+
+//-------------------------------
+//  Archive
+//-------------------------------
+.archive{
+    padding: 7rem 0;
+    @include wide-pc{
+        padding: 70px 0;
+    }
+}
+.article{
+    &__items{
+        width: 60rem;
+        margin: 0 auto;
+        @include wide-pc{
+            width: 600px;
+        }
+        @include tab{
+            width: 100%;
+        }
+    }
+    &__item{
+        width: 100%;
+        padding-bottom: 1.6rem;
+        border-bottom: solid 1px $color-border;
+        @include wide-pc{
+            padding-bottom: 16px;
+        }
+    }
+    &__link{
+        display: block;
+    }
+    &__post-time{
+        margin-bottom: 1.5rem;
+        @include wide-pc {
+            margin-bottom: 15px;
+        }
+    }
+    &__title{
+        @include font-style(1.5rem, $color-white, 700);
+        line-height: 1;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        @include wide-pc{
+            font-size: 15px;
+        }
+    }
+}
+.pager{
+    &__navi{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        li{
+            width: 3rem;
+            height: 3rem;
+            background-color: $color-black;
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.current{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+.item-margin{
+    margin-bottom: 1.6rem;
+    &:last-child{
+        margin-bottom: 7rem;
+    }
+    @include wide-pc {
+        margin-bottom: 16px;
+        &:last-child{
+            margin-bottom: 70px;
+        }
+    }
+}
+
+//-------------------------------
+//  Single
+//-------------------------------
+.single{
+    padding: 7rem 0;
+    @include wide-pc{
+        padding: 70px 0;
+    }
+    &__post-time{
+        margin-bottom: 1.5rem;
+        @include wide-pc {
+            margin-bottom: 15px;
+        }
+    }
+    &__title{
+      margin-bottom: 4rem;
+      @include wide-pc {
+          margin-bottom: 40px;
+      }
+    }
+
+    article{
+        width: 60rem;
+        margin: 0 auto;
+        @include wide-pc{
+            width: 600px;
+        }
+        @include tab{
+            width: 100%;
+        }
+    }
+    h1{
+        @include font-style(2.4rem, $color-white, 700);
+        line-height: 1;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        @include wide-pc{
+            font-size: 24px;
+        }
+    }
+    h2{
+        @include font-style(2rem, $color-white, 700);
+        line-height: 1;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        margin-bottom: 3.2rem;
+        @include wide-pc{
+            font-size: 20px;
+            margin-bottom: 32px;
+        }
+    }
+    p{
+        @include font-style(1.5rem, $color-white, 500);
+        line-height: 1.8;
+        margin-bottom: 4.8rem;
+        @include wide-pc {
+            font-size: 15px;
+            margin-bottom: 48px;
+        }
+        @include tab{
+            font-size: 1.2rem;
         }
     }
 }
